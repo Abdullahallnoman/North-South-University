@@ -49,7 +49,8 @@ public class GenericStack<T> {
 	
 	public boolean isEmpty() {
 
-
+		if(top==null)
+		{return true;}
 		return false;
 
 	}
