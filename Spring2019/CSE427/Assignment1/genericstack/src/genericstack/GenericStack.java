@@ -17,19 +17,30 @@ public class GenericStack<T> {
 
 	public void push(T newValue) {
 
-		return ;
+		GenericStackElement<T> newElement=new GenericStackElement<T>(newValue,top);
+		
+		top=newElement;
+		size++;
+		
 	}
 
 
 	public T pop() {
 		return null;
 	}
+	
 
 	public T peek() {
-
-		return null;
-
+		
+		if (size==0) {
+			
+			return null;
+			
+		}
+		return top.getValue();
+		
 	}
+	
 	public boolean isEmpty() {
 
 
