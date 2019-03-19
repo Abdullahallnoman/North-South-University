@@ -26,7 +26,13 @@ public class GenericStack<T> {
 
 
 	public T pop() {
-		return null;
+		GenericStackElement<T> oldTop=top;
+		if(size==0)
+			{return null;}
+		top=top.getNext();
+		size--;
+		return oldTop.getValue();
+		
 	}
 	
 
