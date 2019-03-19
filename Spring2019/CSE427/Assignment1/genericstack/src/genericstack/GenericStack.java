@@ -1,13 +1,17 @@
 package genericstack;
 
-public class GenericStack<T> {
 
+
+public class GenericStack<T> {
+	
+	GenericStackElement<T> top;
 	int size;
 	
 
 
 	public GenericStack(){
 		size=0;
+		top=null;
 	
 	}
 
